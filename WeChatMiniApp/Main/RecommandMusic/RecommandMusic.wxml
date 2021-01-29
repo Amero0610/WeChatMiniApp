@@ -1,0 +1,65 @@
+<!-- Main/Recommand/RecommandMusic.wxml -->
+<view class="PageRecommandImage"></view>
+<view class="MainPage">
+    <text id="Maintitle">每日精选推荐</text>
+    <view class="RecommandSwiper">
+        <swiper autoplay="true" interval="3000" circular="true" >
+            <swiper-item wx:for="{{SwiperArray}}" wx:key="index" bindtap="Btn_Swiper"  data-id="{{item.id}}">
+                <image class="Swiper-image" src="{{item.src}}" ></image>
+            </swiper-item>
+        </swiper>
+    </view>
+    <view class="Recommand-area">
+        <view id="Recommand_Classic">
+            <text class="Recommand_title">{{Page_MusicList[0].MusicList.specialname}}</text>
+            <image bindtap="SkipListPage" class="RecommandImage" src="{{Page_MusicList[0].MusicListImage}}" data-id="{{Page_MusicList[0]}}"></image>
+        </view>
+        <view id="Recommand_Sleep">
+            <text class="Recommand_title">{{Page_MusicList[1].MusicList.specialname}}</text>
+            <image bindtap="SkipListPage" class="RecommandImage" src="{{Page_MusicList[1].MusicListImage}}" data-id="{{Page_MusicList[1]}}"></image>
+        </view>
+        <view id="Recommand_Absolute">
+            <text class="Recommand_title">{{Page_MusicList[2].MusicList.specialname}}</text>
+            <image bindtap="SkipListPage" class="RecommandImage" src="{{Page_MusicList[2].MusicListImage}}" data-id="{{Page_MusicList[2]}}"></image>
+        </view>
+        <view id="Recommand_Sport">
+            <text class="Recommand_title">{{Page_MusicList[3].MusicList.specialname}}</text>
+            <image bindtap="SkipListPage" class="RecommandImage" src="{{Page_MusicList[3].MusicListImage}}" data-id="{{Page_MusicList[3]}}"></image>
+        </view>
+        <view id="Recommand_Emotion">
+            <text class="Recommand_title">{{Page_MusicList[4].MusicList.specialname}}</text>
+            <image bindtap="SkipListPage" class="RecommandImage" src="{{Page_MusicList[4].MusicListImage}}" data-id="{{Page_MusicList[4]}}"></image>
+        </view>
+    </view>
+    <text id="Recommand-listTitle">新歌榜</text>
+    <view class="Recommand-list">
+        <view class="NewMusic-1">
+            <text class="NewMusicTitle">华语新歌</text>
+<view class="MusicListArea">
+        <ul wx:for="{{Page_ChineseNewMusic}}" wx:key="index">
+            <li bindtap="Rank_CH_SkipPlayer" data-id="{{item}}">
+                <image class="ListPlayBtn" src="/Image/Play.png"></image>
+                <view class="MusicInfo">
+                    <text class="MusicName">{{item.SongName}}</text>
+                    <text class="MusicAuthor">{{item.SingerName}}</text>
+                </view>
+            </li>
+        </ul>
+    </view>
+        </view>
+        <view class="NewMusic-2">
+            <text class="NewMusicTitle">欧美新歌</text>
+            <view class="MusicListArea">
+        <ul wx:for="{{Page_ForeignNewMusic}}" wx:key="index">
+            <li bindtap="Rank_En_SkipPlayer" data-id="{{item}}">
+                <image class="ListPlayBtn" src="/Image/Play.png"></image>
+                <view class="MusicInfo">
+                    <text class="MusicName">{{item.SongName}}</text>
+                    <text class="MusicAuthor">{{item.SingerName}}</text>
+                </view>
+            </li>
+        </ul>
+    </view>
+        </view>
+    </view>
+</view>

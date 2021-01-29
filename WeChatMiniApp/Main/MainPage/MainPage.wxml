@@ -1,0 +1,23 @@
+<!--Main/MainPage/MainPage.wxml-->
+<view class="login">
+  <block wx:if="{{isLogin}}">
+    <image src="{{userImage}}"></image>
+    <text>昵称：{{userName}}</text>
+  </block>
+  <button wx:else open-type="getUserInfo" bindgetuserinfo="getUserInfo">未登录，点击登录</button>
+</view>
+<view class="xihuan">
+  <image src="../../Image/xihuan.png"></image>
+  <view>喜欢({{Collectnum}})</view>
+</view>
+<view class="result" wx:for="{{CollectList}}" wx:key="index">
+  <view id="{{index}}" class="detail" bindtap="gtnpg">
+    <view >
+      <image class="cover" src="https://pic.downk.cc/item/5fe410f33ffa7d37b34e295e.png"></image>
+    </view>
+    <view class="text">
+      <text>{{item.songName}}-</text>
+      <text>{{item.singerName}}</text>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,108 @@
+/**********************************
+LastEditTime: 2021-01-08 22:49:51
+Author: Amero
+Description: 
+Version: 
+FilePath: \Program\Project\Main\MusicListPage\MusicListPage.wxss
+************************************/
+/* Main/MusicListPage/MusicListPage.wxss */
+page {
+    margin: 0px;
+    padding: 0px;
+}
+
+.MusicListPage {
+    display: flex;
+    flex-flow: column;
+}
+
+.MusicListPage {
+    align-items: center;
+}
+
+.MusicListImage {
+    width: 400rpx;
+    height: 400rpx;
+}
+
+.MusicListInfoArea {
+    width: 80%;
+    display: flex;
+    flex-flow: column;
+}
+
+.MusicListTitle {
+    text-align: center;
+    font-size: 50rpx;
+    font-weight: bold;
+}
+
+.MusicListDetail {
+    width: 100%;
+    font-size: 30rpx;
+    height: 300rpx;
+    color: rgb(175, 175, 175);
+    overflow: auto; 
+    text-align: center;
+    user-select: none;
+}
+.PlayAllMusic{
+    text-align: center;
+    background: linear-gradient(45deg, #87adfe, #ff77cd);
+    border-radius: 60rpx;
+    line-height: 70rpx;
+    width: 40vw;
+    height: 100rpx;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #fff;
+    box-shadow: 3px 8px 22px rgba(94, 28, 68, 0.15);
+}
+
+
+
+
+
+.MusicListArea ul {
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+
+}
+
+.MusicListArea ul li {
+    margin-top: 20rpx;
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.ListPlayBtn {
+    flex: none;
+    width: 100rpx;
+    height: 100rpx;
+}
+.MusicInfo{
+    width: 50vw;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-left: 20rpx;
+}
+.MusicName,.MusicAuthor {
+    width: 50vw;
+    text-overflow: ellipsis; 
+    overflow: hidden; 
+    white-space: nowrap; 
+    text-align: left;
+    font-size: 40rpx
+}
+.MusicAuthor{
+    font-size: 30rpx;
+}

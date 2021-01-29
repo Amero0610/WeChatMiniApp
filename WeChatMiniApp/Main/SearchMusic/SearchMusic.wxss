@@ -1,0 +1,51 @@
+/* Main/SearchMusic/SearchMusic.wxss */
+page{
+    margin: 0px;
+    padding: 0px;
+    background-color: #F6F6F6;
+}
+.search{
+    width:720rpx;
+    height:70rpx;
+    margin:5px auto;
+}
+.SearchMusic{
+    width:600rpx;
+    height:70rpx;
+    padding:0 10px;
+    float: left;
+    border:1px solid #1296db;
+    border-radius: 20px;
+}
+.searchIcon{
+    width:70rpx;
+    height:70rpx;
+    float: left;
+}
+.history{
+    color:#8a8a8a;
+}
+.cover{
+    width:150rpx;
+    height:150rpx;
+    float:left;
+}
+.text{
+    width:500rpx;
+    height:150rpx;
+    float: right;
+    overflow:hidden;
+}
+.result{
+    width:700rpx;
+    height:150rpx;
+    margin:0 auto;
+    border-radius: 5px;
+    background-color:white;
+    box-shadow: 0px 4px 16px 0px rgba(0,0,0,0.06);
+    margin-top:30rpx;
+}
+.histxt{
+    display: inline;
+    color:#8a8a8a;
+}

@@ -1,0 +1,40 @@
+<image class="background" src="{{src}}"></image>
+<view id="PalyerPage">
+
+  <view class="Musicimage">
+    <image id="MusicAlbumimg" src="{{psrc}}" bindtap="{{Playstatus}}"></image>
+  </view>
+
+<view id="DownArea">
+  <view class="MusicName">
+    <view >{{musicname}}</view>
+    <view id="SingerName">{{author}}</view>
+  </view>
+
+
+  <view id="MusicProcess">
+    <text id="MusicProcessCurrent">{{DefaultTime}}</text>
+    <slider id="MusicProcessSlider" bindchange="bindchange1" activeColor="#3d4181" max="{{max1}}" value="{{value1}}" block-size="-28" bindchange="changeProgress"></slider>
+    <text id="MusicProcessDuration">{{DurationTime}}</text>
+  </view>
+
+  <view id="CollectIcon">
+    <image class="PlayerButtonimg" src="{{Collectimg}}" bindtap="{{Collectionstatus}}"></image>
+  </view>
+
+  <view id="PlayerBtnArea">
+    <view>
+      <image class="PlayerButtonimg" src="https://pic.downk.cc/item/5ff1f5193ffa7d37b32e3a54.png" bindtap="lastsong"></image>
+    </view>
+    <view>
+      <image class="PlayerButtonimg" src="{{MusicAlbumControl}}" bindtap="{{Playstatus}}"></image>
+    </view>
+
+    <view>
+      <image class="PlayerButtonimg" src="https://pic.downk.cc/item/5ff1f5373ffa7d37b32e690b.png" bindtap="nextsong"></image>
+    </view>
+
+  </view>
+</view>
+  
+</view>

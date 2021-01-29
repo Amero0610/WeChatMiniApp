@@ -1,0 +1,29 @@
+<!--Main/SearchMusic/SearchMusic.wxml-->
+<view class="search">
+  <input class="SearchMusic" type="text" value="{{name}}" confirm-type="search" bindblur="getName" bindconfirm="SearchMusicot"/>
+  <image class="searchIcon" src="../../Image/SearchSelected.png" bindtap="SearchMusic"></image>
+</view>
+<view class="">
+  <view class="history">
+    <text>历史记录:</text>
+  </view>
+  <view class="histxt" wx:for="{{txt}}" wx:key="index">
+    <span id="{{index}}" bindtap="setValue">
+      <text>{{item}} </text>
+    </span>
+  </view>
+</view>
+<view style="float:right">
+  <image src="https://img.imgdb.cn/item/5ff874963ffa7d37b3554ec6.png" bindtap="removeHistory" style="width:50rpx;height:50rpx;"></image>
+</view>
+<view class="result" wx:for="{{obj}}" wx:key="index">
+  <view id="{{index}}" class="detail" bindtap="gtnpg">
+    <view >
+      <image class="cover" src="../../Image/yinyue.png"></image>
+    </view>
+    <view class="text">
+      <text>{{item.SongName}}-</text>
+      <text>{{item.SingerName}}</text>
+    </view>
+  </view>
+</view>

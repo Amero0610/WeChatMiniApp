@@ -1,0 +1,26 @@
+<!-- Main/MusicListPage/MusicListPage.wxml -->
+<view class="MusicListPage">
+    <view class="MusicListImageArea">
+        <image class="MusicListImage" src="{{MusicListImage}}"></image>
+    </view>
+    <view class="MusicListInfoArea">
+        <text class="MusicListTitle">{{MusicListTitle}}</text>
+        <text class="MusicListDetail">
+        {{MusicListInfo}}
+        </text>
+    </view>
+    <view class="PlayAllMusicArea">
+    <button class="PlayAllMusic" bindtap="PlayAllMusic">播放</button>
+    </view>
+    <view class="MusicListArea">
+        <ul wx:for="{{Page_MusicList}}" wx:key="index">
+            <li bindtap="PlayListMusic" data-id="{{item}}">
+                <image class="ListPlayBtn" src="{{item.ImageSrc}}"></image>
+                <view class="MusicInfo">
+                    <text class="MusicName">{{item.SongName}}</text>
+                    <text class="MusicAuthor">{{item.SingerName}}</text>
+                </view>
+            </li>
+        </ul>
+    </view>
+</view>

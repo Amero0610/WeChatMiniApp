@@ -1,0 +1,180 @@
+/**********************************
+LastEditTime: 2021-01-04 19:05:11
+Author: Amero
+Description: 
+Version: 
+FilePath: \Program\Project\Main\RecommandMusic\RecommandMusic.wxss
+************************************/
+/* Main/Recommand/RecommandMusic.wxss */
+page{
+    margin: 0px;
+    padding: 0px;
+    color: rgba(255, 255, 255, 0.829);
+    /* font-family: "TestFont"; */
+}
+.PageRecommandImage{
+    width: 100vw;
+    height: 100vh;
+    background: url('https://pic.downk.cc/item/5ff1ff343ffa7d37b33d24f0.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+    position: fixed;
+    top: 0rpx;
+}
+.MainPage{
+    display: flex;
+    flex-flow: column;
+}
+swiper{
+    height: 400rpx;
+}
+swiper-item{
+    display: flex;
+    justify-content: center;
+}
+.Swiper-image{
+    background-position: center;
+    width: 400rpx;
+    height: 400rpx;
+}
+/* 字体 */
+/***********************************/
+@font-face{
+    font-family: "TestFont";
+    src: url("https://636c-cloud-dev-envir-8gm46zwge993b1c8-1302027564.tcb.qcloud.la/YuseiMagic-Regular.ttf?sign=85d0bd744be70122ccb59ebaed4e9863&t=1608965941");
+
+}
+@font-face {
+    font-family: "Nyashi_Friends";
+    src: url("Nyashi_Friends.eot"); /* IE9 */
+    src: url("Nyashi_Friends.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    
+    url(data:application/x-font-ttf;charset=utf-8;base64,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DAIKDhCGaiIUDAIKFhpqBi4CfBIUDAIKDhB+n3wjBgEKEBICUiYmEhQQEAoMAgoQGBQUNAICDg4CHwTbCgKGAlsGJikCigYC7BQMAhAcEA4WFA4EDhoSEPkUDAoOAgoQFhQQEAoOYAYWEBYUDAIKBB4mAiBEHAwCCiIsKlEqyhAMDgICFD6SSGcuJBwCChYcAuMmRyAWCBoCCg4SEAwKDBQlOnw+AgIKDhYUDgIGAn4Cb1oUDgIKGlQCcwJyDgIMEBQOAgIsBgoQFhUOAiQODhYUEAYCFCAUDAIKICYKDhYUCgIiAgoOFxQOAioCAgoQFhQKAggCDBAUCgICAgQiBAoEDA4QBAQOFhQOBAoUKlYC8xoSDOMQNAJAApIYIAYCAjwC4AoQFjRtNAwCChYeMmMwDgwKMGUwEAwMAgowZzYUDAAAAAIATP+uA8IDNABOAM8AAAUmLwEjJj8BNh8CFRc/AT4BJyMHIwYnJj8BNh8BMzc1JzY3PgE3NSMnIycmPwIzFzMyFxYPAg4BBxUzNxcWDwEGByMWBgcjFSMHDgElJyYnNTcnIwYnJicmPwE2FxY3Nj8BMzY3IwcjByYnJj8BNh8BNzM3NjcjBi8BJj8BIycmPwIzJjc2HwEWBzM3MyY3Nh8BFgczFxYPAQYHIxYHBi8BJjcjByMWBzM2HwEWDwEzNyE2FxYPAQYvASEHDgEPASMPARUHBh8BBxUHBgITHhgCBBAECg4WFAYeJAQQBgIEAr4qIAwCCiIsArQGAgIKKFQnwQKSFAwCChSWAuMcFhQGGhAeQyS1GhQMAgoSFM8CDhoEBAQYPP7MFQoCBAIGJCocFg4CCg4WGB4yJwwEGhAWHG8sEAwMAgoOFggWc1IIDAIOFBQOBALNFAwCChbNBBAOFhQQBqICVgQOEBYUDgTNFAwCCg4QxQYQDhYUEgZOAqoCCAIOEhQOBAwGMAFvMioMAgoYICz+nVAMJhgGBAYMBgYCBAQKDlAEFAYQGBQMAgoGBAIMBhg8IQIFEw4WFBAGAgIMEhAMEBAWBAIKEBYUCgIOGCIwEBYYCAQEChAWFAwCMVYiBAYUEA4KDBBadUAKAgIQEBgUDAIOBAgkECYqBAQCChAWFAwCAgQGJiQKAgoSGRgKDhYUDCAYDAIKFiACHBQMAgoUHgoOFhQKAikgDAIKICsCIB8KAgoSGCYEAhAOFhQQBAQEJEQgBgwGBAYKDpk2WhQMAAEAAAAKzMyQGMh6Xw889QABBAAAAAAA2Y3WpgAAAADbx8qsABz/oAPeA1QAAAAHAAEAAAAAAAAAAQAAA3D/cAAABAAAHAAiA94AAQAAAAAAAAAAAAAAAAAAAAEEAAGSABwAjAAmAEwAAAAOARIBiALuBBoAAQAAAAUA+QAGAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAABIA3gABAAAAAAAAACwAAAABAAAAAAABABUALAABAAAAAAACAAcAQQABAAAAAAADABUASAABAAAAAAAEABUAXQABAAAAAAAFAA0AcgABAAAAAAAGAA4AfwABAAAAAAAHABUAjQABAAAAAAANAD0AogADAAEECQAAAEYA3wADAAEECQABACABJQADAAEECQACAA4BRQADAAEECQADACABUwADAAEECQAEACABcwADAAEECQAFABoBkwADAAEECQAGABwBrQADAAEECQAHACAByQADAAEECQANAHoB6TIwMTYtMjAyMCAww54ww6swwrsgLyAww5cww60wwrgwwqcwwq8ww4hVLUZvMGswwoMwVzBDMMOVMMOsMMOzMMK6UmVndWxhcjBrMMKDMFcwQzDDlTDDrDDDszDCujBrMMKDMFcwQzDDlTDDrDDDszDCulZlcnNpb24gMi4wNzdOeWFzaGktRnJpZW5kczBrMMKDMFcwQzDDlTDDrDDDszDCukNyOlRURTAxMDgwMTkwODMwMDQyMzE4QTAwMDIwOCBNbzpUVEUwMTA4MDIwMDUyMjAyNTEzOEEwMDAyMDgAMgAwADEANgAtADIAMAAyADAAIAAwAN4AMADrADAAuwAgAC8AIAAwANcAMADtADAAuAAwAKcAMACvADAAyABVAC0ARgBvADAAawAwAIMAMABXADAAQwAwANUAMADsADAA8wAwALoAUgBlAGcAdQBsAGEAcgAwAGsAMACDADAAVwAwAEMAMADVADAA7AAwAPMAMAC6ADAAawAwAIMAMABXADAAQwAwANUAMADsADAA8wAwALoAVgBlAHIAcwBpAG8AbgAgADIALgAwADcANwBOAHkAYQBzAGgAaQAtAEYAcgBpAGUAbgBkAHMAMABrADAAgwAwAFcAMABDADAA1QAwAOwAMADzADAAugBDAHIAOgBUAFQARQAwADEAMAA4ADAAMQA5ADAAOAAzADAAMAA0ADIAMwAxADgAQQAwADAAMAAyADAAOAAgAE0AbwA6AFQAVABFADAAMQAwADgAMAAyADAAMAA1ADIAMgAwADIANQAxADMAOABBADAAMAAwADIAMAA4AAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUABQAAAQIBAwEEAQUHdW5pNjNBOAd1bmk2NUU1B3VuaTdDQkUHdW5pODM1MA==) format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+ */
+    
+    url("Nyashi_Friends.svg#Nyashi_Friends") format("svg"); /* iOS 4.1- */
+    font-style: normal;
+    font-weight: normal;
+}
+/*******************************/
+
+#Maintitle{
+    display: block;
+    font-weight: bold;
+    font-size: 70rpx;
+    text-align: center;
+    margin-top: 20rpx;
+    font-family: "Nyashi_Friends";
+}
+.Recommand-area{
+    /* background-color: lightblue; */
+    display: flex;
+    justify-content: space-around;
+    align-content: space-around;
+    flex-wrap: wrap;
+    justify-items: center;
+}
+/* 选择所有父级是 Recommand 元素的 <view> 元素 */
+.Recommand-area>view{
+    display: flex;
+    width: 49%;
+    height: 300rpx;
+    /* background-color: lightcyan;
+    border: 1rpx solid black; */
+    flex-direction: column;
+
+
+}
+.Recommand_title{
+    display: inline-block;
+    width: 100%;
+    text-overflow: ellipsis; 
+    overflow: hidden; 
+    white-space: nowrap; 
+    text-align: center;
+    margin-top: 20rpx;
+    font-size: 35rpx;
+}
+
+.RecommandImage{
+    margin-top: 10rpx;
+    flex: none;
+    align-self: center;
+    width: 200rpx;
+    height: 200rpx;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+#Recommand_Classic{
+    width: 100%;
+}
+
+
+
+
+
+#Recommand-listTitle{
+    font-size: 50rpx;
+    text-align: center;
+}
+.Recommand-list{
+    margin-top: 20rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+.NewMusicTitle{
+    display: block;
+    text-align: center;
+}
+.NewMusic-1,.NewMusic-2{
+    width: 40%;
+}
+
+
+
+.Recommand-list ul{
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+
+}
+.Recommand-list ul li{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20rpx;
+}
+.ListPlayBtn,.NewMusicPlay-icon{
+    width: 35rpx;
+    height: 35rpx;
+}
+
+
+.MusicListArea ul li view {
+    width: 80%;
+    display: flex;
+    flex-flow: column;
+}
+
+.MusicName,.MusicAuthor {
+    margin-left: 20rpx;
+    display: block;
+    width: 100%;
+    text-overflow: ellipsis; 
+    overflow: hidden; 
+    white-space: nowrap; 
+    text-align: left;
+}
+.MusicName{
+    font-size: 40rpx;
+}
+.MusicAuthor{
+    font-size: 30rpx;
+    color: #ffffffdc;
+} 

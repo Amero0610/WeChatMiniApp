@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "Main/RecommandMusic/RecommandMusic",
+    "Main/SearchMusic/SearchMusic",
+    "Main/MusicPlayer/MusicPlayer",
+    "Main/MainPage/MainPage",
+    "pages/index/index",
+    "pages/logs/logs",
+    "Main/MusicListPage/MusicListPage"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#1296db",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "selectedColor": "#1296db",
+    "list": [
+      {
+        "pagePath": "Main/RecommandMusic/RecommandMusic",
+        "text": "推荐",
+        "iconPath": "/Image/Recommand.png",
+        "selectedIconPath": "/Image/RecommandSelected.png"
+      },
+      {
+        "pagePath": "Main/SearchMusic/SearchMusic",
+        "text": "搜索",
+        "iconPath": "/Image/Search.png",
+        "selectedIconPath": "/Image/SearchSelected.png"
+      },
+      {
+        "pagePath": "Main/MainPage/MainPage",
+        "text": "我的",
+        "iconPath": "/Image/My.png",
+        "selectedIconPath": "/Image/MySelected.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

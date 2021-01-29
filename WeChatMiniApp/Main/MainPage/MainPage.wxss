@@ -1,0 +1,84 @@
+/**********************************
+LastEditTime: 2020-12-23 23:09:16
+Author: Amero
+Description: 
+Version: 
+FilePath: \Program\Project\Main\MainPage\MainPage.wxss
+************************************/
+/* Main/MainPage/MainPage.wxss */
+page{
+    margin: 0px;
+    padding: 0px;
+}
+.login{
+    background-color: #1296db;
+    height: 200rpx;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+.login image{
+   width: 150rpx;
+   height: 150rpx;
+   border-radius: 50%;
+}
+.login text{
+    color: black;
+    font-size: 40rpx;
+    margin: 10rpx;
+}
+button{
+    background: initial;
+}
+.xihuan{
+    display: flex;
+    flex-direction: row;
+    margin: 20rpx;
+}
+.xihuan image{
+    width: 50rpx;
+    height: 50rpx;
+}
+.xihuan text{
+    margin-right: 129.6px;
+    margin-left: 52.52px;
+    color: #1296db;
+    background-color: #f6f6f6;
+    border-radius: 10rpx;
+}
+.list{
+    display: flex;
+    flex-direction: row;
+    margin: 20rpx;
+    border-radius: 10px;
+    background-color: #f6f6f6;
+}
+.list image{
+    width: 150rpx;
+    height: 150rpx;
+}
+.list text{
+    font-size: 40rpx;
+}
+.cover{
+    width:150rpx;
+    height:150rpx;
+    float:left;
+}
+.text{
+    width:500rpx;
+    height:150rpx;
+    float: right;
+}
+.result{
+    width:700rpx;
+    height:150rpx;
+    margin:0 auto;
+    border-radius: 5px;
+    background-color:white;
+    box-shadow: 0px 4px 16px 0px rgba(0,0,0,0.06);
+    margin-top:30rpx;
+}
+
+
